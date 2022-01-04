@@ -5316,7 +5316,7 @@ export interface SpaceProps extends ProgressProps {
      * @description The number of rendering lines of the progress bar.
      * @defaultValue 120
      */
-    scaleNumber?: number | undefined;
+    scaleNumber?: string | undefined;
     /**
      * @language zh-CN
      * @description 具体值
@@ -11013,7 +11013,7 @@ export let Utils: {
         highLowToInt(high: number, low: number): number;
         intToHighLow(num: number): [];
         inMaxMin(min: number, max: number, value: number): number;
-        scaleNumber(scale: number, value: number): number;
+        scaleNumber(scale: number, value: number): string;
         range(start: number, end: number, step: number): number[];
         calcPosition(value: number, min: number, max: number, newMin: number, newMax: number): number;
         calcPercent(min: number, max: number, value: number, offset: number): number;
